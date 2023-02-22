@@ -1,0 +1,74 @@
+<mat-stepper labelPosition="bottom" orientation="vertical" linear>
+
+  <!-- Nom -->
+  <mat-step label="Nom" [stepControl]="nameCtrl">
+    <mat-form-field class="w-100 mt-3">
+      <mat-label>Choisissez un nom pour votre armée</mat-label>
+
+      <input matInput type="text" [formControl]="nameCtrl" (blur)="trimName()">
+
+      <mat-error>
+        Le nom est obligatoire.
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-icon-button matStepperNext color="primary" type="button">
+      <mat-icon>expand_more</mat-icon>
+    </button>
+  </mat-step>
+
+  <!-- Allégeance -->
+  <mat-step label="Allégeance" [stepControl]="allegianceCtrl">
+    <button mat-icon-button matStepperPrevious type="button">
+      <mat-icon>expand_less</mat-icon>
+    </button>
+
+    <div>
+      <mat-button-toggle-group class="w-100" [formControl]="allegianceCtrl" (ngModelChange)="onAllegianceChange()">
+        <mat-button-toggle class="w-100" [value]="true">
+          Bien
+        </mat-button-toggle>
+
+        <mat-button-toggle class="w-100" [value]="false">
+          Mal
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+
+    <button color="primary" mat-icon-button matStepperNext type="button">
+      <mat-icon>expand_more</mat-icon>
+    </button>
+  </mat-step>
+
+  <!-- Factions -->
+  <mat-step label="Factions" [stepControl]="factionCtrl">
+    <button mat-icon-button matStepperPrevious type="button">
+      <mat-icon>expand_less</mat-icon>
+    </button>
+
+    <mat-form-field class="w-100">
+      <mat-label>Choisissez les factions qui composeront votre armée</mat-label>
+      <mat-select [formControl]="factionCtrl" multiple (ngModelChange)="updateAlliance()">
+        <mat-option *ngFor="let faction of factions" [value]="faction.id">
+          {{ faction.name }}
+        </mat-option>
+      </mat-select>
+      <mat-hint [class]="factionHintClass">{{ factionHintText }}</mat-hint>
+    </mat-form-field>
+
+    <button color="primary" mat-icon-button matStepperNext type="button">
+      <mat-icon>expand_more</mat-icon>
+    </button>
+  </mat-step>
+
+  <!-- Troupes -->
+  <mat-step label="Troupes">
+    <button mat-icon-button matStepperPrevious type="button">
+      <mat-icon>expand_less</mat-icon>
+    </button>
+
+    <button color="primary" mat-icon-button matStepperNext type="button">
+      <mat-icon>expand_more</mat-icon>
+    </button>
+  </mat-step>
+</mat-stepper>

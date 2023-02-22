@@ -1,0 +1,7 @@
+mat-list-item {
+    cursor: pointer;
+
+    &.active-link {
+        color: red !important;
+    }
+}
