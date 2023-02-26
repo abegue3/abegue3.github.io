@@ -1,0 +1,62 @@
+[
+    {
+        "warriorId": 1,
+        "optionId": 11,
+        "cost": 30
+    },
+    {
+        "warriorId": 1,
+        "optionId": 12,
+        "cost": 25
+    },
+    {
+        "warriorId": 1,
+        "optionId": 5,
+        "cost": 2
+    },
+    {
+        "warriorId": 1,
+        "optionId": 10,
+        "cost": 1
+    },
+    {
+        "warriorId": 1,
+        "optionId": 4,
+        "cost": 1
+    },
+    {
+        "warriorId": 2,
+        "optionId": 11,
+        "cost": 30
+    },
+    {
+        "warriorId": 2,
+        "optionId": 12,
+        "cost": 25
+    },
+    {
+        "warriorId": 2,
+        "optionId": 5,
+        "cost": 2
+    },
+    {
+        "warriorId": 3,
+        "optionId": 1,
+        "cost": 5
+    },
+    {
+        "warriorId": 3,
+        "optionId": 12,
+        "cost": 25
+    },
+    {
+        "warriorId": 3,
+        "optionId": 5,
+        "cost": 2
+    },
+    {
+        "warriorId": 4,
+        "optionId": 1,
+        "cost": 5
+    }
+]

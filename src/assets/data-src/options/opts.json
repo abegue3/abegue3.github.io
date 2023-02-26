@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Cheval"
+    },
+    {
+        "id": 2,
+        "name": "Cheval caparaçonné"
+    },
+    {
+        "id": 3,
+        "name": "Armure lourde"
+    },
+    {
+        "id": 4,
+        "name": "Bouclier"
+    },
+    {
+        "id": 5,
+        "name": "Javelots"
+    },
+    {
+        "id": 6,
+        "name": "Armure"
+    },
+    {
+        "id": 7,
+        "name": "Poney"
+    },
+    {
+        "id": 8,
+        "name": "Cape elfique"
+    },
+    {
+        "id": 9,
+        "name": "Étendard royal du Rohan"
+    },
+    {
+        "id": 10,
+        "name": "Arc"
+    },
+    {
+        "id": 11,
+        "name": "Cor de guerre"
+    },
+    {
+        "id": 12,
+        "name": "Bannière"
+    }
+]

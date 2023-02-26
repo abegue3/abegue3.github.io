@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Faction } from 'src/app/models/faction';
-import { DataContext } from 'src/app/data-context';
+import { Faction } from 'src/app/models/entities/faction';
 import { AllianceType } from 'src/app/enums/alliance-type.enum';
+import alliances from 'src/assets/data-src/alliances.json';
+import factions from 'src/assets/data-src/factions.json';
 
-/** Service en charge des factions. */
+/** Service relatif aux factions. */
 @Injectable({ providedIn: 'root' })
 export class FactionService {
 
@@ -15,25 +16,30 @@ export class FactionService {
   public fetchAllianceType(factionsIds: number[]): Observable<AllianceType | null> {
     if (factionsIds.length < 2) return of(null);
 
-    var allianceType = AllianceType.Green;
-    var i = 0;
-    while (allianceType > AllianceType.Red && i < factionsIds.length - 1) {
-      var j = i + 1;
+    let allianceType: AllianceType | null = null;
+    let i = 0;
+    do {
+      let j = i + 1;
 
-      while (allianceType > AllianceType.Red && j < factionsIds.length) {
-        var alliance = DataContext.alliances.find(a =>
-          (a.leftFactionId == factionsIds[i] && a.rightFactionId == factionsIds[j]) ||
-          (a.leftFactionId == factionsIds[j] && a.rightFactionId == factionsIds[i])
-        )!;
+      do {
+        var factionAlliances = alliances[factionsIds[i]];
 
-        if (alliance.type < allianceType)
-          allianceType = alliance.type;
+        if (factionAlliances[AllianceType.Green]) {
+          if (!allianceType)
+            allianceType = AllianceType.Green;
+          continue;
+        }
 
-        ++j;
-      }
+        if (factionAlliances[AllianceType.Orange]) {
+          allianceType = AllianceType.Orange;
+          continue;
+        }
 
-      ++i;
-    }
+        if (factionAlliances[AllianceType.Red])
+          allianceType = AllianceType.Red;
+
+      } while ((!allianceType || allianceType < AllianceType.Red) && ++j < factionsIds.length);
+    } while ((!allianceType || allianceType < AllianceType.Red) && ++i < factionsIds.length - 1)
 
     return of(allianceType);
   }
@@ -44,10 +50,26 @@ export class FactionService {
    */
   public fetchFactions(isGood: boolean): Observable<Faction[]> {
     return of(
-      DataContext.factions
-        .filter(f => f.isGood == isGood)
-        .sort((f1, f2) => f1.name.localeCompare(f2.name, undefined, { sensitivity: 'base' }))
+      factions
+        .filter((f: any) => f.isGood == isGood)
+        .sort((x: any, y: any) => x.name.localeCompare(y.name, undefined, { sensitivity: 'base' }))
+        .map((f: any) => new Faction(f.id, f.name))
     );
+  }
+
+  /**
+   * Récupération du libellé lié à un type d'alliance.
+   * @param allianceType Type d'alliance.
+   */
+  public getAllianceLabel(allianceType: AllianceType): string {
+    switch (allianceType) {
+      case AllianceType.Green:
+        return 'Alliance historique';
+      case AllianceType.Orange:
+        return 'Alliance de circonstance';
+      case AllianceType.Red:
+        return 'Alliance impossible';
+    }
   }
 
 }

@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "name": "Númenor",
+        "isGood": true
+    },
+    {
+        "id": 2,
+        "name": "Minas Tirith",
+        "isGood": true
+    },
+    {
+        "id": 3,
+        "name": "Fiefs",
+        "isGood": true
+    },
+    {
+        "id": 4,
+        "name": "Rohan",
+        "isGood": true
+    },
+    {
+        "id": 5,
+        "name": "Arnor",
+        "isGood": true
+    },
+    {
+        "id": 6,
+        "name": "Rangers",
+        "isGood": true
+    },
+    {
+        "id": 7,
+        "name": "Garnison de Dale",
+        "isGood": true
+    },
+    {
+        "id": 8,
+        "name": "Armée de Lacville",
+        "isGood": true
+    },
+    {
+        "id": 9,
+        "name": "Survivants de Lacville",
+        "isGood": true
+    },
+    {
+        "id": 10,
+        "name": "Communauté de l'Anneau",
+        "isGood": true
+    },
+    {
+        "id": 11,
+        "name": "Compagnie de Thorïn",
+        "isGood": true
+    },
+    {
+        "id": 12,
+        "name": "Conseil blanc",
+        "isGood": true
+    },
+    {
+        "id": 13,
+        "name": "Foncombe",
+        "isGood": true
+    },
+    {
+        "id": 14,
+        "name": "Lothlórien",
+        "isGood": true
+    },
+    {
+        "id": 15,
+        "name": "Domaine de Thranduil",
+        "isGood": true
+    },
+    {
+        "id": 16,
+        "name": "Khazad Dûm",
+        "isGood": true
+    },
+    {
+        "id": 17,
+        "name": "Armée de Thrór",
+        "isGood": true
+    },
+    {
+        "id": 18,
+        "name": "Monts de fer",
+        "isGood": true
+    },
+    {
+        "id": 19,
+        "name": "Erebor restauré",
+        "isGood": true
+    },
+    {
+        "id": 20,
+        "name": "Comté",
+        "isGood": true
+    },
+    {
+        "id": 21,
+        "name": "Armée de Dunharrow",
+        "isGood": true
+    },
+    {
+        "id": 22,
+        "name": "Hommes sauvages de Druadan",
+        "isGood": true
+    },
+    {
+        "id": 23,
+        "name": "Fangorn",
+        "isGood": true
+    },
+    {
+        "id": 24,
+        "name": "Monts Brumeux",
+        "isGood": true
+    },
+    {
+        "id": 25,
+        "name": "Alliance de Radagast",
+        "isGood": true
+    },
+    {
+        "id": 26,
+        "name": "Vagabonds des terres sauvages",
+        "isGood": true
+    },
+    {
+        "id": 27,
+        "name": "Barad-Dûr",
+        "isGood": false
+    },
+    {
+        "id": 28,
+        "name": "Mordor",
+        "isGood": false
+    },
+    {
+        "id": 29,
+        "name": "Angmar",
+        "isGood": false
+    },
+    {
+        "id": 30,
+        "name": "Puissances obscures de Dol Guldur",
+        "isGood": false
+    },
+    {
+        "id": 31,
+        "name": "Légion d'Azog",
+        "isGood": false
+    },
+    {
+        "id": 32,
+        "name": "Chasseurs d'Azog",
+        "isGood": false
+    },
+    {
+        "id": 33,
+        "name": "Orientaux",
+        "isGood": false
+    },
+    {
+        "id": 34,
+        "name": "Horde serpent",
+        "isGood": false
+    },
+    {
+        "id": 35,
+        "name": "Extrême Harad",
+        "isGood": false
+    },
+    {
+        "id": 36,
+        "name": "Khand",
+        "isGood": false
+    },
+    {
+        "id": 37,
+        "name": "Corsaires d'Umbar",
+        "isGood": false
+    },
+    {
+        "id": 38,
+        "name": "Isengard",
+        "isGood": false
+    },
+    {
+        "id": 39,
+        "name": "Brigands de Sharcoux",
+        "isGood": false
+    },
+    {
+        "id": 40,
+        "name": "Moria",
+        "isGood": false
+    },
+    {
+        "id": 41,
+        "name": "Gobelinville",
+        "isGood": false
+    },
+    {
+        "id": 42,
+        "name": "Trolls des montagnes",
+        "isGood": false
+    },
+    {
+        "id": 43,
+        "name": "Sinistres habitants de la Forêt Noire",
+        "isGood": false
+    },
+    {
+        "id": 44,
+        "name": "Calamité du Nord",
+        "isGood": false
+    }
+]

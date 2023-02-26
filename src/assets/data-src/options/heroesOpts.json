@@ -1,0 +1,157 @@
+[
+    {
+        "heroId": 1,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 2,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 2,
+        "optionId": 2,
+        "cost": 15
+    },
+    {
+        "heroId": 2,
+        "optionId": 3,
+        "cost": 5
+    },
+    {
+        "heroId": 2,
+        "optionId": 4,
+        "cost": 5
+    },
+    {
+        "heroId": 3,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 3,
+        "optionId": 4,
+        "cost": 5
+    },
+    {
+        "heroId": 3,
+        "optionId": 5,
+        "cost": 5
+    },
+    {
+        "heroId": 4,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 4,
+        "optionId": 2,
+        "cost": 15
+    },
+    {
+        "heroId": 4,
+        "optionId": 5,
+        "cost": 5
+    },
+    {
+        "heroId": 4,
+        "optionId": 5,
+        "cost": 4
+    },
+    {
+        "heroId": 5,
+        "optionId": 5,
+        "cost": 5
+    },
+    {
+        "heroId": 6,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 6,
+        "optionId": 6,
+        "cost": 5
+    },
+    {
+        "heroId": 6,
+        "optionId": 4,
+        "cost": 5
+    },
+    {
+        "heroId": 6,
+        "optionId": 5,
+        "cost": 5
+    },
+    {
+        "heroId": 7,
+        "optionId": 7,
+        "cost": 5
+    },
+    {
+        "heroId": 7,
+        "optionId": 8,
+        "cost": 5
+    },
+    {
+        "heroId": 7,
+        "optionId": 4,
+        "cost": 5
+    },
+    {
+        "heroId": 8,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 9,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 12,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 12,
+        "optionId": 4,
+        "cost": 5
+    },
+    {
+        "heroId": 13,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 14,
+        "optionId": 9,
+        "cost": 50
+    },
+    {
+        "heroId": 14,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 16,
+        "optionId": 1,
+        "cost": 10
+    },
+    {
+        "heroId": 16,
+        "optionId": 4,
+        "cost": 5
+    },
+    {
+        "heroId": 16,
+        "optionId": 10,
+        "cost": 5
+    },
+    {
+        "heroId": 16,
+        "optionId": 3,
+        "cost": 5
+    }
+]

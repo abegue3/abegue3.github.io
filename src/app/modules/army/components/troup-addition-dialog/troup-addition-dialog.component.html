@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>
+  Nouvelle troupe
+</h1>
+
+<div class="w-auto" mat-dialog-content>
+  <mat-form-field class="w-100">
+    <mat-label>Choisissez un capitaine pour votre troupe</mat-label>
+
+    <mat-select [(ngModel)]="heroId">
+      <mat-option *ngFor="let hero of heroes" [value]="hero.id">
+        {{ hero.name }}
+      </mat-option>
+    </mat-select>
+
+    <mat-hint>
+      {{ heroHintText }}
+    </mat-hint>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close cdkFocusInitial>
+    Annuler
+  </button>
+
+  <button mat-flat-button color="primary" [disabled]="!heroId" [mat-dialog-close]="heroId">
+    Créer la troupe
+  </button>
+</div>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { firstValueFrom } from 'rxjs';
 import { AllianceType } from 'src/app/enums/alliance-type.enum';
-import { Faction } from 'src/app/models/faction';
+import { Faction } from 'src/app/models/entities/faction';
 import { FactionService } from 'src/app/services/faction.service';
 
 @Component({
@@ -21,7 +21,7 @@ export class ArmyCreationComponent implements OnInit {
   public constructor(
     private readonly _factionService: FactionService
   ) {
-    this.nameCtrl = new FormControl('', Validators.required);
+    this.nameCtrl = new FormControl(''/*, Validators.required*/);
     this.allegianceCtrl = new FormControl(undefined, Validators.required);
     this.factionCtrl = new FormControl([], Validators.minLength(1));
   }
@@ -40,16 +40,9 @@ export class ArmyCreationComponent implements OnInit {
   }
 
   public get factionHintText(): string {
-    switch (this._allianceType) {
-      case AllianceType.Green:
-        return 'Alliance historique';
-      case AllianceType.Orange:
-        return 'Alliance de circonstance';
-      case AllianceType.Red:
-        return 'Alliance impossible';
-      default:
-        return 'Aucune alliance';
-    }
+    return this._allianceType
+      ? this._factionService.getAllianceLabel(this._allianceType)
+      : 'Aucune alliance';
   }
 
   private get factionSelection(): number[] {
@@ -58,6 +51,10 @@ export class ArmyCreationComponent implements OnInit {
 
   private get isGood(): boolean {
     return this.allegianceCtrl.value as boolean;
+  }
+
+  public get selectedFactions(): Faction[] {
+    return this.factions.filter(f => this.factionSelection.includes(f.id));
   }
 
   ngOnInit() {

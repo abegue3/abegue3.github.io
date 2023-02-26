@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "factionId": 4,
+        "name": "Guerrier du Rohan",
+        "cost": 6,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 3,
+        "defense": 4,
+        "attack": 1,
+        "health": 1,
+        "bravery": 3
+    },
+    {
+        "id": 2,
+        "factionId": 4,
+        "name": "Cavalier du Rohan",
+        "cost": 14,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 3,
+        "defense": 5,
+        "attack": 1,
+        "health": 1,
+        "bravery": 3
+    },
+    {
+        "id": 3,
+        "factionId": 4,
+        "name": "Garde royal du Rohan",
+        "cost": 10,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 3,
+        "defense": 6,
+        "attack": 1,
+        "health": 1,
+        "bravery": 3
+    },
+    {
+        "id": 4,
+        "factionId": 4,
+        "name": "Éclaireur du Rohan",
+        "cost": 8,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 3,
+        "strength": 3,
+        "defense": 4,
+        "attack": 1,
+        "health": 1,
+        "bravery": 3
+    },
+    {
+        "id": 5,
+        "factionId": 4,
+        "name": "Fils d'Éorl",
+        "cost": 20,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 4,
+        "defense": 6,
+        "attack": 1,
+        "health": 1,
+        "bravery": 4
+    }
+]

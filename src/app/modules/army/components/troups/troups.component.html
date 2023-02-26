@@ -1,0 +1,7 @@
+<pb-troup *ngFor="let troup of troups; let index = index" label="#{{index + 1}}" [troup]="troup"
+          (delete)="deleteTroup(index)">
+</pb-troup>
+
+<button color="primary" mat-fab (click)="onAddTroup()">
+  <mat-icon>add</mat-icon>
+</button>
